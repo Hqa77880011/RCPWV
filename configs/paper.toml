@@ -1,0 +1,12 @@
+seeds = [0, 1, 2]
+epochs = 30
+surrogate_batch = 32
+classifier_batch = 8
+train = 1536
+val = 192
+cal = 512
+test = 512
+critical_cal = 256
+critical_test = 256
+timing_samples = 128
+timing_repeats = 3

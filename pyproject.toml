@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rcpwv"
+version = "0.1.0"
+description = "Risk-Calibrated Process-Window Verification of Lithography Surrogates"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+dependencies = [
+    "torch>=2.7,<3",
+    "numpy>=2.0,<3",
+    "scipy>=1.13,<2",
+    "matplotlib>=3.9,<4",
+    "opencv-python>=4.10,<5",
+    "gdstk>=0.9.60,<2",
+]
+
+[project.urls]
+Repository = "https://github.com/Hqa77880011/RCPWV"
+
+[tool.setuptools]
+py-modules = [
+    "benchmark_classifier", "benchmark_nominal", "benchmark_window",
+    "calibrate_window", "classifier", "compare_optics", "download_sources", "evaluate",
+    "evaluate_classifier", "evaluate_public", "geometry", "metrics", "model",
+    "patterns", "plot_examples", "prepare_critical", "prepare_data", "public_data",
+    "run_all", "simulator", "spectral_simulator", "summarize", "train", "verify",
+]
